@@ -1,0 +1,248 @@
+/* ==========================================================================
+   ESTILOS GENERALES Y CONFIGURACIÓN
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   PORTADA (HERO SECTION)
+   ========================================================================== */
+.hero {
+  background: linear-gradient(135deg, #1e1e2f 0%, #0f0c1b 100%);
+  color: #fff;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  padding: 20px;
+  max-width: 800px;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #00dfa2;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #b0b3b8;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00dfa2;
+  color: #0f0c1b;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #00b887;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   MENÚ DE NAVEGACIÓN Y SELECTOR DE IDIOMA
+   ========================================================================== */
+nav {
+  background-color: #0f0c1b;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #00dfa2;
+}
+
+/* Estilos para el switch de idiomas */
+.lang-switch {
+  color: #555;
+  font-weight: bold;
+  margin-left: 25px !important;
+}
+
+.lang-switch button {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 2px 6px;
+  transition: color 0.2s;
+}
+
+.lang-switch button:hover {
+  color: #00dfa2;
+}
+
+.lang-switch button.active {
+  color: #00dfa2;
+  border-bottom: 2px solid #00dfa2;
+}
+
+/* ==========================================================================
+   SECCIONES DE CONTENIDO
+   ========================================================================== */
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #0f0c1b;
+  margin-bottom: 20px;
+  border-left: 5px solid #00dfa2;
+  padding-left: 15px;
+}
+
+.section p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  text-align: justify;
+}
+
+/* Recuadro específico de bilingüismo */
+.bilingue {
+  background-color: #e8f9f3;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+  border-left: 4px solid #00dfa2;
+}
+
+.bilingue h3 {
+  color: #0f0c1b;
+  margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   GALERÍA DE IMÁGENES
+   ========================================================================== */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.03);
+}
+
+/* ==========================================================================
+   MULTIMEDIA (VIDEO)
+   ========================================================================== */
+video {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 20px auto 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* ==========================================================================
+   GLOSARIO (SISTEMA DE REJILLA / GRID)
+   ========================================================================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-weight: 500;
+  color: #444;
+  border-bottom: 3px solid #e0e0e0;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-bottom-color: #00dfa2;
+}
+
+/* ==========================================================================
+   PIE DE PÁGINA (FOOTER)
+   ========================================================================== */
+footer {
+  background-color: #0f0c1b;
+  color: #888;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
